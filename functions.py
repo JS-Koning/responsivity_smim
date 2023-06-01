@@ -4,7 +4,7 @@ from matplotlib.ticker import FormatStrFormatter
 
 
 def read_textfile(filename, skiprows):
-    #filename is a string nerd
+    #filename is a string
     dataset = np.loadtxt(filename, dtype=str, skiprows = skiprows)
     dataset = np.char.replace(dataset, 'i', 'j')
     dataset = dataset.astype(complex)
